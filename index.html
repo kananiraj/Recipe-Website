@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food website</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav>
+      <span id="brand">
+        <!-- <a href="index.html">F0oDONGA</a>-->
+        <a href="index.html"><img src="foodonga_logo.png" height="75px" width="150px"></a>
+      </span>
+
+      <ul id="menu">
+        <li><a href="index.html">Home<span>.</span></a></li>
+        <li><a href="work.html">Work<span>.</span></a></li>
+        <li><a href="about.html">About Me<span>.</span></a></li>
+        <li><a href="contact.html">Contact<span>.</span></a></li>
+      </ul>
+
+      <div id="toggle">
+        <div class="span">Menu</div>
+      </div>
+
+    </nav>
+
+    <div id="resize">
+      <div class="close-btn">Close</div>
+
+      <ul id="menu">
+        <li><a href="index.html">Home<span>.</span></a></li>
+        <li><a href="work.html">Work<span>.</span></a></li>
+        <li><a href="about.html">About Me<span>.</span></a></li>
+        <li><a href="contact.html">Contact<span>.</span></a></li>
+      </ul>
+    </div>
+    <div class="hero">
+      <div class="header">
+        <h1 class="line anim-typewriter">Beyond the boundaries of taste.</h1>
+      </div>
+    </div>
+
+    <div class="scroll-down"></div>
+
+    <div class="container-fluid" >
+      <br><br><br>
+
+      <h3>Select </h3>
+
+      <div class="hr">
+        <div class="row"></div>
+      </div>
+      <br>
+      <div class="btns" style="text-align:center;">
+        
+        <a href="#transfer1"><button href="#transfer" class="btn btn-outline-dark">Italian</button></a>
+        <a href="#transfer2"><button href="#transfer" class="btn btn-outline-dark">Chinese</button></a>
+        <a href="#transfer3"><button href="#transfer" class="btn btn-outline-dark">Gujarati</button></a>
+        <a href="#transfer4"><button href="#transfer" class="btn btn-outline-dark">South Indian</button></a>
+        
+
+      </div>
+      <br>
+      <div class="hr">
+        <div class="row"></div>
+      </div>
+      <div class="whitespace" id="transfer1"></div>
+      
+      <div class="row">
+        <div class="col-lg-7" ></div>
+
+        <div class="col-lg-4 project project1 wow fadeInUp"  onclick="location.href='project1.html'"></div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      <div class="whitespace" id="transfer2"></div>
+
+      <div class="row">
+        <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project2.html'"></div>
+
+        <div class="col-lg-6"></div>
+      </div>
+
+      <div class="whitespace" id="transfer3"></div>
+
+      <div class="row">
+        <div class="col-lg-7"></div>
+
+        <div class="col-lg-4 project project3 wow fadeInUp" onclick="location.href='project3.html'"></div>
+
+        <div class="col-lg-1"></div>
+      </div>
+
+      <div class="whitespace" id="transfer4"></div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-5 project project4 wow fadeInUp" onclick="location.href='project4.html'"></div>
+
+        <div class="col-lg-6"></div>
+      </div>
+
+      <div class="whitespace"></div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <br><br>
+
+        <div class="collab">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="wow fadeInUp">Enjoy It !</p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="hr wow fadeInDown">
+          <div class="row"></div>
+        </div>
+
+        <br><br>
+
+        <div class="info">
+          <div class="row">
+            <div class="col-lg-4" id="personal">
+              <p class="wow fadeInLeft">Connect With Us</p>
+              <h4 class="wow fadeInLeft" data-wow-delay="0.2s">@RajKanani</h4>
+              <h4 class="wow fadeInLeft" data-wow-delay="0.2s">@FenilGadhiya</h4>
+              <br><br>
+            </div>
+
+            <div class="col-lg-4" id="media">
+              <p class="wow fadeInUp" data-wow-delay="0s">Follow Me</p>
+
+              <ul>
+                <li id="fb" class="wow fadeInUp" data-wow-delay="0.2s">FB</li>
+                <li id="ig" class="wow fadeInUp" data-wow-delay="0.3s">IG</li>
+                <li id="tw" class="wow fadeInUp" data-wow-delay="0.4s">TW</li>
+                <li id="yt" class="wow fadeInUp" data-wow-delay="0.5s">YT</li>
+              </ul>
+
+              <br><br>
+            </div>
+
+            <div class="col-lg-4" id="address">
+              <p class="wow fadeInRight" data-wow-delay="0s">Drop a mail</p>
+              <h4 class="wow fadeInRight" data-wow-delay="0.2s">kananiraj007@gmail.com</h4>
+              <h4 class="wow fadeInRight" data-wow-delay="0.2s">Fenilgadhiya12@gmail.com</h4>
+              <br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $("#toggle").click(function() {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+    });
+
+    $("#resize ul li a").click(function() {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+    });
+
+    $(".close-btn").click(function() {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+    });
+
+    TweenMax.from("#brand", 1, {
+      delay: 0.4,
+      y: 10,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom("#menu li a", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    }, 0.1);
+
+    new WOW().init();
+  </script>
+</body>
+
+</html>
